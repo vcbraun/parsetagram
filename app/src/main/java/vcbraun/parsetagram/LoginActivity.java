@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.parse.LogInCallback;
 import com.parse.ParseException;
@@ -86,6 +87,7 @@ public class LoginActivity extends AppCompatActivity {
             public void done(ParseUser user, ParseException e) {
                 if(e != null) {
                     Log.e("TAG", "Issue with Login");
+                    Toast.makeText(LoginActivity.this, "Could not log in.", Toast.LENGTH_LONG).show();
                     e.printStackTrace();
                     return;
                 }
