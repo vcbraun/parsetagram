@@ -11,7 +11,8 @@
         android:id="@+id/tiUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etUser"
@@ -25,13 +26,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        app:passwordToggleDrawable="@drawable/ic_remove_red_eye_black_24dp"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password" />
+            android:hint="Password"
+            android:selectAllOnFocus="false"
+            android:singleLine="false" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
