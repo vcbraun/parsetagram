@@ -1,7 +1,7 @@
 # Parsetagram
 
 
-**Parsetagram** is a photo sharing app similar to Instagram, but using Parse as its backend.
+**Parsetagram** is a photo sharing app using Parse as its backend.
 
 ## Note: The server and database for this project are now offline.
 
